@@ -14,7 +14,7 @@ export default function Header() {
         <p className='font-light text-md leading-7'>
           Hi, my name is Hafidz Alif Rachman, also known as Hafidz, is an aspiring front-end developer with just one month of experience. He has shown dedication and a
           keen ability to master various web frameworks. Hafidz's journey began with a solid foundation in HTML, CSS, and JavaScript, enabling
-          him to create basic web pages and delve into popular frameworks like TailwindCSS, React, and Angular.</p>
+          him to create basic web pages and delve into popular frameworks like TailwindCSS, React, and Laravel.</p>
         <p className='font-light text-md leading-7'>
           What distinguishes Hafidz is his quick adaptability to new challenges, making him a promising front-end developer. Despite his limited
           experience, he actively seeks resources and tutorials to stay up-to-date with web development's evolving landscape. Hafidz's dedication
