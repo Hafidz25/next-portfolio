@@ -25,7 +25,7 @@ export const metadata = {
     title: "Hafidz - Personal Website",
     description:
       "Personal website, portfolio, roadmap, and more of Hafidz",
-    url: "http://localhost:3000",
+    url: "#",
     siteName: "Hafidz",
     images: [
       {
@@ -45,6 +45,12 @@ export default function RootLayout({ children }) {
 
   return (
     <html lang="en" className="light">
+      {/* <link
+        rel="icon"
+        href="./?<generated>"
+        type="image/<generated>"
+        sizes="<generated>"
+      /> */}
       <body className={sora.className}>
         <Providers>
           {/* <SpotifyTop /> */}
