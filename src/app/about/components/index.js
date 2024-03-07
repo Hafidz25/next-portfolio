@@ -10,8 +10,8 @@ export default function Index() {
     // <ContainerAOS>
     <div className="h-full ">
       <Header />
-      <Divider orientation="horizontal" className="my-4" />
-      <Certificates />
+      {/* <Divider orientation="horizontal" className="my-4" /> */}
+      {/* <Certificates /> */}
       <Divider orientation="horizontal" className="mt-6 mb-4" />
       <Education />
       {/* <SwiperCertificate /> */}

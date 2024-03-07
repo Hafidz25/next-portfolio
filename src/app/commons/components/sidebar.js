@@ -41,15 +41,13 @@ export default function Sidebar() {
             <div className="flex flex-row md:flex-col md:justify-center justify-between p-4 md:p-0">
               <Me activeProps={isActive} />
               <div
-                className={`flex ${
-                  isActive ? "flex-col-reverse justify-between" : "flex-row"
-                }`}
+                className={`flex ${isActive ? "flex-col-reverse justify-between" : "flex-row"
+                  }`}
               >
                 <div className="relative w-full">
                   <div
-                    className={`absolute md:right-1 md:-top-[148px] right-4 ${
-                      isActive ? "-top-10" : "top-1"
-                    } `}
+                    className={`absolute md:right-1 md:-top-[148px] right-4 ${isActive ? "-top-10" : "top-1"
+                      } `}
                   >
                     <ThemeSwitcher />
                   </div>
@@ -61,47 +59,41 @@ export default function Sidebar() {
                     transition={{ duration: 0.5, delay: 0.5 }}
                     aria-label="btn-activator"
                     ref={dropdown}
-                    className={`flex-col ${
-                      isActive ? "space-y-1.5 " : "space-y-1"
-                    } justify-center relative top-1 right-0 items-center flex md:hidden p-2 transition-all duration-500 ease-in-out`}
+                    className={`flex-col ${isActive ? "space-y-1.5 " : "space-y-1"
+                      } justify-center relative top-1 right-0 items-center flex md:hidden p-2 transition-all duration-500 ease-in-out`}
                     onClick={() => {
                       setIsActive(!isActive);
                     }}
                   >
                     <span
-                      className={`hamburger-list ${
-                        isActive ? "hamburger-list-active" : ""
-                      } origin-top-left transition-all duration-500 ease-in-out`}
+                      className={`hamburger-list ${isActive ? "hamburger-list-active" : ""
+                        } origin-top-left transition-all duration-500 ease-in-out`}
                     ></span>
                     <span
-                      className={`hamburger-list ${
-                        isActive ? "hamburger-list-active" : ""
-                      } origin-left transition-all duration-500 ease-in-out`}
+                      className={`hamburger-list ${isActive ? "hamburger-list-active" : ""
+                        } origin-left transition-all duration-500 ease-in-out`}
                     ></span>
                     <span
-                      className={`hamburger-list ${
-                        isActive ? "hamburger-list-active" : ""
-                      } origin-bottom-left transition-all duration-500 ease-in-out`}
+                      className={`hamburger-list ${isActive ? "hamburger-list-active" : ""
+                        } origin-bottom-left transition-all duration-500 ease-in-out`}
                     ></span>
                   </motion.button>
                 </div>
               </div>
             </div>
             <nav
-              className={`transition-all duration-500 ease-in-out md:flex flex-col p-4 md:p-0 h-screen md:h-auto  ${
-                isActive ? "flex" : "hidden"
-              }`}
+              className={`transition-all duration-500 ease-in-out md:flex flex-col p-4 md:p-0 h-screen md:h-auto  ${isActive ? "flex" : "hidden"
+                }`}
             >
               <Divider orientation="horizontal" className="md:my-4 mb-4" />
               <ul className="flex flex-col space-y-2">
                 {navLists.map(({ name, link, icon }) => (
                   <li
                     key={name}
-                    className={`${
-                      pathname === link
+                    className={`${pathname === link
                         ? "bg-neutral-200/50 dark:bg-neutral-800"
                         : ""
-                    } rounded-lg text-dark dark:text-neutral-100 group hover:scale-100 md:hover:scale-105  hover:bg-neutral-200 dark:hover:bg-neutral-700 transition-all duration-500 ease-in-out capitalize `}
+                      } rounded-lg text-dark dark:text-neutral-100 group hover:scale-100 md:hover:scale-105  hover:bg-neutral-200 dark:hover:bg-neutral-700 transition-all duration-500 ease-in-out capitalize `}
                   >
                     <Link
                       href={link}

@@ -58,18 +58,18 @@ export const STACKS = [
     name: 'Bootstrap',
     icon: <BsFillBootstrapFill size={iconSize} className="text-purple-500" />,
   },
-  {
-    name: 'Material UI',
-    icon: <SiMui size={iconSize} className="text-sky-400" />,
-  },
+  // {
+  //   name: 'Material UI',
+  //   icon: <SiMui size={iconSize} className="text-sky-400" />,
+  // },
   // {
   //   name: 'Vite',
   //   icon: <SiVite size={iconSize} className="text-purple-500" />,
   // },
-  {
-    name: 'ChakraUI',
-    icon: <SiChakraui size={iconSize} className="text-teal-500" />,
-  },
+  // {
+  //   name: 'ChakraUI',
+  //   icon: <SiChakraui size={iconSize} className="text-teal-500" />,
+  // },
   // {
   //   name: 'React Native',
   //   icon: <SiReact size={iconSize} className="text-sky-600" />,
@@ -78,10 +78,10 @@ export const STACKS = [
   //   name: 'Firebase',
   //   icon: <SiFirebase size={iconSize} className="text-yellow-500" />,
   // },
-  {
-    name: 'Framer Motion',
-    icon: <SiFramer size={iconSize} />,
-  },
+  // {
+  //   name: 'Framer Motion',
+  //   icon: <SiFramer size={iconSize} />,
+  // },
   // {
   //   name: 'Vue.js',
   //   icon: <SiVuedotjs size={iconSize} className="text-green-500" />,
@@ -127,4 +127,3 @@ export const STACKS = [
   //   icon: <SiReacttable size={iconSize} className="text-rose-600" />,
   // }, 
 ]
-  

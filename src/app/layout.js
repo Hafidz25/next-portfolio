@@ -16,17 +16,17 @@ const sora = Sora({
 });
 
 export const metadata = {
-  title: "Home | Reza",
+  title: "Home | Hafidz",
   description: "Personal website, portfolio, roadmap, and more",
   keywords:
-    "Ryznoxy ,Portfolio,ryznoxy Portfolio,Reza, Reza Portfolio,ryznoxy my id,ryznoxy Reza Portfolio,Reza",
-  creator: "Reza Adi N",
+    "Hafidz ,Portfolio,Hafidz Portfolio,Hafidz, Hafidz Portfolio",
+  creator: "Hafidz Alif R.",
   openGraph: {
-    title: "Reza - Personal Website",
+    title: "Hafidz - Personal Website",
     description:
-      "Personal website, portfolio, roadmap, and more of Ryznoxy AKA Reza",
-    url: "https://ryznox.my.id/",
-    siteName: "Ryznoxy",
+      "Personal website, portfolio, roadmap, and more of Hafidz",
+    url: "http://localhost:3000",
+    siteName: "Hafidz",
     images: [
       {
         url: "https://res.cloudinary.com/dxgsqxdi3/image/upload/f_auto,q_auto/ohc78qqittlujanfbobr",
@@ -42,11 +42,12 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
+
   return (
     <html lang="en" className="light">
       <body className={sora.className}>
         <Providers>
-          <SpotifyTop />
+          {/* <SpotifyTop /> */}
           <TopLoader />
           <Layouts>{children}</Layouts>
         </Providers>

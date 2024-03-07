@@ -5,22 +5,26 @@ export const getAccessToken = async () => {
   myHeaders.append("Content-Type", "application/x-www-form-urlencoded");
 
   const urlencoded = new URLSearchParams();
-  urlencoded.append("client_id", process.env.NEXT_PUBLIC_CLIENT_ID_SPOTIFY);
+  urlencoded.append("grant_type", "client_credentials");
+  urlencoded.append("client_id", "5b0063e7a6f6426ca246d3374eb420a6");
   urlencoded.append(
-    "client_secret",
-    process.env.NEXT_PUBLIC_CLIENT_SECRET_SPOTIFY
+    "client_secret", "957c4387b7df40e9b95268dc03eb1c03"
   );
-  urlencoded.append("grant_type", "refresh_token");
-  urlencoded.append(
-    "refresh_token",
-    process.env.NEXT_PUBLIC_REFRESH_TOKEN_SPOTIFY
-  );
+  // urlencoded.append(
+  //   "refresh_token",
+  //   "BQD0xuMHUHMQO0qs9Yit5iQxMRXvFfLXtqcPCWc0-DbZFAjwHvCqIcFtjgXEbzuP2cNHiM686z347AZKTtZ_Uj8f_rJhCubykhDJdCVWZ50OlFGn9To"
+  // );
 
   const requestOptions = {
     method: "POST",
-    headers: myHeaders,
-    body: urlencoded,
-    next: { revalidate: 3600 },
+    headers: {
+      "Content-Type": "application/x-www-form-urlencoded"
+    },
+    body: {
+      "grant_type": "client_credentials",
+      "client_id": "5b0063e7a6f6426ca246d3374eb420a6",
+      "client_secret": "957c4387b7df40e9b95268dc03eb1c03"
+    },
   };
 
   try {
@@ -31,7 +35,7 @@ export const getAccessToken = async () => {
     const data = await response.json();
     return data.access_token;
   } catch (error) {
-    console.log();
+    console.log(error);
   }
 };
 

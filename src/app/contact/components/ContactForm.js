@@ -3,7 +3,7 @@ import React, { useEffect, useRef, useState } from "react";
 import { useForm, ValidationError } from "@formspree/react";
 
 function ContactForm() {
-  const [state, handleSubmit] = useForm(process.env.NEXT_PUBLIC_FORM);
+  const [state, handleSubmit] = useForm("123");
 
   const inputName = useRef(null);
   const inputEmail = useRef(null);

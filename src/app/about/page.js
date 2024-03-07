@@ -2,7 +2,7 @@ import ContainerAOS from "../commons/components/elements/ContainerAOS";
 import Index from "./components/index";
 
 export const metadata = {
-  title: "About | Reza",
+  title: "About | Hafidz",
   description: "A short story about Reza",
 };
 

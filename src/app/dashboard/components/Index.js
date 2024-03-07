@@ -14,7 +14,7 @@ export default function Index({ githubData }) {
       <Divider className="my-6" />
       <GithubHeader />
       <Divider className="my-6" />
-      <Spotify />
+      {/* <Spotify /> */}
     </div>
   );
 }

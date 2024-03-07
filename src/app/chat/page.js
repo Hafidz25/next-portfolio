@@ -4,7 +4,7 @@ import ChatRoom from "./Chat";
 const NoSSR = dynamic(() => import("./Chat"), { ssr: false });
 
 export const metadata = {
-  title: "Chat | Reza",
+  title: "Chat | Hafidz",
   description: "A short story about Reza",
 };
 

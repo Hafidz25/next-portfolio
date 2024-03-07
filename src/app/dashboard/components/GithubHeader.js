@@ -30,14 +30,14 @@ function GithubHeader() {
         <SectionHeading title="Github" icon={<BiLogoGithub size={24} />} />
         <SectionSubHeading>
           <p>My Github Contributions</p>
-          <Link href="https://github.com/ryznoxy" target="_blank">
-            @ryznoxy
+          <Link href="https://github.com/Hafidz25" target="_blank">
+            @Hafidz25
           </Link>
         </SectionSubHeading>
       </div>
       <div className="p-2 bg-neutral-50 dark:bg-neutral-900 rounded flex justify-center items-center overflow-hidden mx-auto xl:w-[822px] md:w-[480px] lg:w-[750px] ">
         <GitHubCalendar
-          username="ryznoxy"
+          username="Hafidz25"
           colorScheme={theme === "dark" ? "dark" : "light"}
           blockMargin={4}
           blockSize={14}
