@@ -17,7 +17,7 @@ export default function Me({ activeProps }) {
           <Status />
           <div className="dark:brightness-50 brightness-[0.96] relative w-full h-24 overflow-hidden rounded-xl">
             <Image
-              src="https://res.cloudinary.com/dxgsqxdi3/image/upload/c_crop,g_auto,h_600,w_800/e_contrast:55/e_brightness:-9/e_gamma:150/e_gamma:127/qsngd6wxb7ywt9jrwni8.jpg"
+              src="https://res.cloudinary.com/dxngjqetz/image/upload/f_auto,q_auto/cs2xqvcknmew4157g5zx"
               width={640}
               height={480}
               alt="bgprofile"
