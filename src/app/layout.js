@@ -53,7 +53,7 @@ export default function RootLayout({ children }) {
       /> */}
       <body className={sora.className}>
         <Providers>
-          {/* <SpotifyTop /> */}
+          <SpotifyTop />
           <TopLoader />
           <Layouts>{children}</Layouts>
         </Providers>

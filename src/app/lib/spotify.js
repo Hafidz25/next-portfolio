@@ -18,21 +18,31 @@ export const getAccessToken = async () => {
   const requestOptions = {
     method: "POST",
     headers: {
+      "Authorization": "Basic NWIwMDYzZTdhNmY2NDI2Y2EyNDZkMzM3NGViNDIwYTY6NTgzZDgwOTI0MDA0NGJkYjhmZTBjZjhjZTVhNjllZWI=",
       "Content-Type": "application/x-www-form-urlencoded"
     },
     body: {
-      "grant_type": "client_credentials",
-      "client_id": "5b0063e7a6f6426ca246d3374eb420a6",
-      "client_secret": "957c4387b7df40e9b95268dc03eb1c03"
+      "grant_type": "refresh_token",
+      "refresh_token": "AQDYcw4s_MCRSJ286nVrPqIpc5SJ9fJKZ8eo-aJqh5KDo1DVGA0vLVwULuFXIY-AKEJOAVuKK5gDI3x7qi_nSlu1_6g-xWrNv0zcdyyvziGwVx5cHTe_1-zo6z6C-hTP64g"
     },
   };
 
   try {
     const response = await fetch(
-      "https://accounts.spotify.com/api/token",
-      requestOptions
+      "https://accounts.spotify.com/api/token", {
+      method: "POST",
+      body: JSON.stringify({
+        grant_type: "refresh_token",
+        refresh_token: "AQDYcw4s_MCRSJ286nVrPqIpc5SJ9fJKZ8eo-aJqh5KDo1DVGA0vLVwULuFXIY-AKEJOAVuKK5gDI3x7qi_nSlu1_6g-xWrNv0zcdyyvziGwVx5cHTe_1-zo6z6C-hTP64g"
+      }),
+      headers: {
+        "Authorization": "Basic NWIwMDYzZTdhNmY2NDI2Y2EyNDZkMzM3NGViNDIwYTY6NTgzZDgwOTI0MDA0NGJkYjhmZTBjZjhjZTVhNjllZWI=",
+        "Content-Type": "application/x-www-form-urlencoded"
+      }
+    }
     );
     const data = await response.json();
+    console.log(data)
     return data.access_token;
   } catch (error) {
     console.log(error);
