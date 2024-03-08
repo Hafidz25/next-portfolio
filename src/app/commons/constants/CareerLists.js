@@ -12,7 +12,7 @@ export const CareerLists = [
     start_date: "2023-08",
     end_date: null,
     industry: "wellness",
-    link: "#",
+    link: "https://tmint.co/",
   },
   {
     position: "Intern Web Developer",
@@ -24,6 +24,6 @@ export const CareerLists = [
     start_date: "2022-01",
     end_date: "2022-12",
     industry: "wellness",
-    link: "#",
+    link: "https://www.mejakita.com/",
   },
 ];
